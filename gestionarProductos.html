@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Pepsi Store</title>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <header>
+        <div>
+          <img src="./img/logo-pepsi.png" alt="Logo Pepsi" class="logo" />
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="gestionarProductos.html">Agregar productos</a></li>
+          <li><a href="catalogo.html">Catalogo de productos</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>Agregar productos al catalogo</h1>
+        <form action="" class="form-registro ancho-form">
+          <fieldset>
+            <legend>Información producto</legend>
+            <div class="flex-container ancho-form" id="div-form-agregar-producto">
+              <label for="codigo">Codigo</label>
+              <input type="text" id="codigo" placeholder="Codigo" required />
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" placeholder="Nombre" required />
+              <label for="precio">Precio</label>
+              <input type="number" id="precio" placeholder="Precio" required />
+              <label for="imagen">Elegir imagen:</label>
+              <input type="file" id="imagen" accept="image/jpeg" required />
+              <button type="button" onclick="agregarProductoCatalogo();/*llenarCatalogo();*/">Agregar</button>
+            </div>
+          </fieldset>
+        </form>
+        <h2>Nuestro catalogo</h2>
+        <div class="contenedor-tabla">
+          <table class="tabla-productos" id="tabla-productos">
+            <thead>
+              <tr>
+                <th>Codigo</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </main>
+      <footer>
+        <p>Avenida del emprendimiento, zona del soñador</p>
+        <p>Ciudad de guatemala</p>
+        <p>2022 Pepsi - Todos los derechos reservados</p>
+        <p>Contáctenos: jbolanos1@miumg.edu.gt</p>
+      </footer>
+    </div>
+  </body>
+</html>
